@@ -1,8 +1,100 @@
 
-.. _chapter-intro:
+Summary
+=======
+
+|osia| describes a set of standardized application program interfaces (APIs) needed to connect the
+multiple building blocks of an identity management solution.
+
+.. only:: itu
+
+    NOTE - This recommendation is technically equivalent to the OSIA specification (see [b-OSIA] in the bibliography).
+
+.. only:: itu
+
+    History [#f1]_
+    ==============
+
+    .. list-table::
+        :header-rows: 1
+
+        * - Edition
+          - Recommendation
+          - Approval
+          - Study Group
+          - Unique ID
+
+        * - 1.0
+          - ITU-T X.1281
+          - 2024-03-01
+          - 17
+          - 11.1002/1000/15662
+
+    .. [#f1] To access the Recommendation, type the URL https://handle.itu.int/ in the address field of your web browser, followed by the Recommendation's unique ID.
+
+    **Keywords**
+    
+    Authentication, identity management, interoperability.
+
+    Foreword
+    ========
+
+    The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications,
+    information and communication technologies (ICTs).
+    The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU.
+    ITU-T is responsible for studying technical, operating and tariff questions and
+    issuing Recommendations on them with a view to standardizing telecommunications
+    on a worldwide basis.
+
+    The World Telecommunication Standardization Assembly (WTSA), which meets every four years,
+    establishes the topics for study by the ITU-T study groups which, in turn, produce Recommendations on these topics.
+    The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1.
+    In some areas of information technology which fall within ITU-T's purview, the necessary
+    standards are prepared on a collaborative basis with ISO and IEC.
+
+    Note
+    ----
+
+    In this Recommendation, the expression "Administration" is used for conciseness to indicate
+    both a telecommunication administration and a recognized operating agency.
+
+    Compliance with this Recommendation is voluntary. However, the Recommendation may contain
+    certain mandatory provisions (to ensure, e.g., interoperability or applicability) and
+    compliance with the Recommendation is achieved when all of these mandatory provisions
+    are met. The words "shall" or some other obligatory language such as "must" and the negative
+    equivalents are used to express requirements. The use of such words does not suggest that
+    compliance with the Recommendation is required of any party.
+
+    Intellectual Property Rights
+    ----------------------------
+
+    ITU draws attention to the possibility that the practice or implementation of this Recommendation
+    may involve the use of a claimed Intellectual Property Right. ITU takes no position
+    concerning the evidence, validity or applicability of claimed Intellectual Property Rights,
+    whether asserted by ITU members or others outside of the Recommendation development process.
+
+    As of the date of approval of this Recommendation, ITU had not received notice of intellectual
+    property, protected by patents/software copyrights, which may be required to implement this
+    Recommendation. However, implementers are cautioned that this may not represent the latest
+    information and are therefore strongly urged to consult the appropriate ITU-T databases
+    available via the ITU-T website at http://www.itu.int/ITU-T/ipr/. Implementers should also
+    be aware that the organization that originated the technically equivalent document listed
+    in the Bibliography may have received notices of intellectual property required for the
+    implementation of this Recommendation.
 
 Introduction
 ============
+
+Identity systems that are built on specific vendor solutions lack interoperability among
+the main system modules. Lack of vendor and technology interoperability causes difficulties
+in replacing a building block of an identity management system from vendor A with an equivalent
+building block from vendor B or when expanding the scope of an existing system by linking to
+new building blocks. The main technology barrier is the lack of standardized interfaces (APIs).
+Building blocks are often unable to communicate with each other due to varying interfaces (APIs)
+and data formats, making it difficult to swap out building blocks or add new ones to the system.
+
+This |specification| describes a set of standardized application program interfaces (APIs) needed
+to connect the multiple building blocks of an identity management solution.
+
 
 Problem Statement: lack of interoperability in identity systems
 ---------------------------------------------------------------
@@ -130,16 +222,6 @@ This document aims at:
 * formalizing definitions, scope and main functionalities of each building block within the identity ecosystem,
 * defining standardized interfaces and data format to connect the multiple ecosystem building blocks to ensure seamless interaction via pre-defined services.
 
-This document is structured as follows:
-
-* Chapter 1 :ref:`chapter-intro`: This chapter introduces the problem statement and the OSIA initiative.
-* Chapter 2 :ref:`chapter-func-view`: This chapter provides an overview of OSIA interfaces and how they can be mapped against the various identity ecosystem building blocks. Finally, the chapter describes a series of use cases where different OSIA interfaces are implemented between multiple identity ecosystem building blocks.
-* Chapter 3 :ref:`chapter-security`: This chapter lists a set of Privacy and Security features embedded in OSIA interfaces specifications.
-* Chapter 4 :ref:`osia-versions-ref`: This chapter describes the way OSIA interfaces can be referenced in documents and tenders.
-* Chapter 5 :ref:`chapter-interfaces`: This chapter describes the specifications of all OSIA interfaces.
-* Chapter 6 :ref:`chapter-bb`: This chapter describes OSIA interfaces that each building block of the identity ecosystem may implement.
-* Chapter 7 :ref:`chapter-tech-specs`: This chapter describes the technical specifications for all OSIA interfaces.
-* Chapter 8 :ref:`chapter-annexes`: This chapter describes the glossary, data format and license that covers OSIA specifications.
 
 Convention and Typographical Rules
 ----------------------------------

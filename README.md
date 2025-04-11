@@ -29,7 +29,24 @@ It also enables the all-important government industry collaborations needed to c
 
 See also https://secureidentityalliance.github.io/
 
-## Building documentation
+## Reading Documentation
+
+The OSIA library is a set of documents covering:
+
+- An introduction to OSIA concepts:
+
+  - OSIA Introduction
+
+- The description of the Use Cases supported by OSIA, organized by business domain
+
+  - OSIA Identity Management Use Cases & Components
+  - OSIA Border Control Use Cases & Components
+
+- The technical specification of the OSIA interfaces
+
+  - OSIA Specifications
+
+## Building Documentation
 
 OSIA documentation is written in reStruturedText and built with Sphinx.
 
@@ -41,10 +58,12 @@ To build it yourself, prepare your environment:
 pip install Sphinx Pillow sphinxcontrib-httpdomain sphinxcontrib-plantuml sc-oa
 ```
 
-UML diagrams are built with PlantUML and Java 8. They must be installed separately.
+UML diagrams are built with PlantUML and Java. They must be installed separately.
 
-Build:
+Build for HTML:
 
 ```
-sphinx-build -b html src/doc target/html
+sphinx-build -b html src/intro target/intro/html
+sphinx-build -b html src/uc-identity target/uc-identity/html
+sphinx-build -b html src/specs target/specs/html
 ```

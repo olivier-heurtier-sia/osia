@@ -194,3 +194,16 @@ def setup(app):
     for root, dirs, files in os.walk(os.path.join(app.srcdir,'images')):
         for f in fnmatch.filter(files,"*.pdf"):
             shutil.copy(os.path.join(root,f),app.outdir)
+
+
+if 'itu' in tags:
+    rst_prolog += '''
+.. |osia| replace:: ITU-T X.1281
+.. |specification| replace:: Recommendation
+    '''
+else:
+    rst_prolog += '''
+.. |osia| replace:: OSIA
+.. |specification| replace:: specification
+    '''
+

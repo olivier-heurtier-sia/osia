@@ -1,10 +1,35 @@
-References
-==========
+Bibliography
+============
 
-.. list-table:: References
+.. only:: itu
+
+    [b-JSON Web Token]
+        IETF RFC 8725, *JSON Web Token Best Current Practices*,
+        
+        https://datatracker.ietf.org/doc/html/rfc8725
+
+    [b-OpenAPI]
+        OpenAPI Specification v3.0.3 (2020),
+        
+        https://spec.openapis.org/oas/v3.0.3
+
+    [b-WSQ]
+        NIST; FBI; *Los Alamos Natinal Laboratory.  Wavelet Scalar Quantization algorithm 2: PDF 2.0*,
+        
+        `https://www.nist.gov/system/files/documents/2020/09/03/11-wsq_bradley_brislawn_standard_ieee_iscs_-_19940530.pdf <https://www.nist.gov/system/files/documents/2020/09/03/11-wsq_bradley_brislawn_standard_ieee_iscs_-_19940530.pdf>`_
+
+
+.. only:: not itu
+
+  .. list-table:: Bibliography
       :widths: 20 80
-      :stub-columns: 1
 
+      * - [RFC8725]
+        - JSON Web Token Best Current Practices. URL: https://www.rfc-editor.org/rfc/rfc8725
+      * - [OpenAPI 3.0.3]
+        - OpenAPI Specification. February 2020. URL: https://swagger.io/specification/v3/
+      * - [WSQ]
+        - NIST; FBI; Los Alamos Natinal Laboratory.  Wavelet Scalar Quantization algorithm. URL: https://www.fbibiospecs.cjis.gov/
       * - [RFC2119]
         - Key words for use in RFCs to Indicate Requirement Levels. March 1997. Best Current Practice. URL: https://tools.ietf.org/html/rfc2119
       * - [RFC3230]
@@ -25,8 +50,6 @@ References
         - HTTP Semantics. June 2022. URL: https://www.rfc-editor.org/rfc/rfc9110
       * - [RFC9457]
         - Problem Details for HTTP APIs. URL: https://www.rfc-editor.org/rfc/rfc9457.html
-      * - [RFC8725]
-        - JSON Web Token Best Current Practices. URL: https://www.rfc-editor.org/rfc/rfc8725
       * - [ISO8601]
         - ISO/TC 154, Date and time - Representations for information interchange, URL: https://www.iso.org/standard/70907.html
       * - [JPEG/ISO10918-1]
@@ -45,7 +68,3 @@ References
         - ISO/IEC JTC 1/SC 37, Information technology - Biometric Identity Assurance Services - Part 1: BIAS services, URL: https://www.iso.org/standard/53228.html
       * - [PDF/ISO32000]
         - ISO/TC 171/SC 2, Document management - Portable document format - Part 2: PDF 2.0, URL: https://www.iso.org/standard/75839.html
-      * - [WSQ]
-        - NIST; FBI; Los Alamos Natinal Laboratory.  Wavelet Scalar Quantization algorithm. URL: https://www.fbibiospecs.cjis.gov/
-      * - [OpenAPI 3.0.3]
-        - OpenAPI Specification. February 2020. URL: https://swagger.io/specification/v3/
