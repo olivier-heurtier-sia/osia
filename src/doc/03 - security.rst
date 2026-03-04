@@ -280,7 +280,7 @@ Signature can be applied before or after encryption. This is controlled with an 
 The process to validate the integrity is:
 
 1. Use the public key to decrypt the signatures and validate the hashes
-1. Recalculate the hash(es) from the data and the scope
+2. Recalculate the hash(es) from the data and the scope
 3. Compare the recalculated hash(es) and the hash(es) retrieved from the signature
 
 .. note::
@@ -299,7 +299,8 @@ The process to validate the integrity is:
         It means that the URL can be included in the integrity and can be encrypted if needed.
       - the node name of the buffer (``image`` in this case) can be used to continue to represent the base64-encoded buffer itself,
         even if it is externalized.
-        This is by convention, to preserve the stability over time of the integrity/encryption structures.
+        This is by convention, to preserve the stability over time of the integrity/encryption structures when buffers are first
+        included in the payload and then externalized.
 
     This applies to all externalized buffers (``data``/``dataRef``, ``template``/``templateRef`` and ``signature``/``signatureRef``)
 

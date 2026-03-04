@@ -8,6 +8,8 @@ info:
 
     Change log:
     
+    - 1.3.1:
+      - Remove followRef
     - 1.3.0:
       - Add structures to manage data encryption and integrity
       - Accept Verifiable Credential as supporting document
@@ -37,7 +39,7 @@ info:
       - Add fields on BiometricData: instance, metadata, comment, missing
     - 1.0.0: Initial version
 
-  version: 1.3.0
+  version: 1.3.1
   title: OSIA Enrollment Interface
   license:
     name: SIA
@@ -646,12 +648,6 @@ components:
           description: if true, indicates that the hash was calculated using encrypted data.
           type: boolean
           default: false
-        followRef:
-          description: |
-            if true, indicates that the referenced buffers must be fetched and included in the hash.
-            If false, only the URL is considered for the hash calculation
-          type: boolean
-          default: false
         hash:
           description: |
             Hash calculated from the attributes listed in scope. Hash is calculated using the following process:
@@ -659,8 +655,6 @@ components:
             - Build an intermediate JSON containing only the fields identified in the scope
             - Canonicalize the JSON using RFC8785
             - Hash the result
-            - If 'followRef' is true, include in the hash computation the binary data referenced
-              by URI included in the scope.
           type: string
         signature:
           description: |

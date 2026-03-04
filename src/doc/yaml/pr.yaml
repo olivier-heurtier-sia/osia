@@ -8,6 +8,8 @@ info:
 
     Change log:
     
+    - 1.5.2:
+      - Remove followRef
     - 1.5.1 (Sync'ed with abis.yaml):
       - Add timestamps (creation date, last update date) in identity data model
       - Accept ``ALL`` in readGAlleryContent
@@ -47,7 +49,7 @@ info:
       - Change the mandatory flag for the status, based on the type of service
     - 1.0.0: Initial version
 
-  version: 1.5.0
+  version: 1.5.2
   title: OSIA Population Registry Interface
   license:
     name: SIA
@@ -1157,12 +1159,6 @@ components:
           description: if true, indicates that the hash was calculated using encrypted data.
           type: boolean
           default: false
-        followRef:
-          description: |
-            if true, indicates that the referenced buffers must be fetched and included in the hash.
-            If false, only the URL is considered for the hash calculation
-          type: boolean
-          default: false
         hash:
           description: |
             Hash calculated from the attributes listed in scope. Hash is calculated using the following process:
@@ -1170,8 +1166,6 @@ components:
             - Build an intermediate JSON containing only the fields identified in the scope
             - Canonicalize the JSON using RFC8785
             - Hash the result
-            - If 'followRef' is true, include in the hash computation the binary data referenced
-              by URI included in the scope.
           type: string
         signature:
           description: |
