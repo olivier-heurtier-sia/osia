@@ -101,17 +101,20 @@ under a new licence named the "OSIA License".
 
 .. list-table:: OSIA Services Versions (New Licence)
     :header-rows: 2
-    :widths: 30 10 10 10
+    :widths: 30 10 10 10 10
     
     * - OSIA Release
       - 6.1.0
       - 7.0
       - 7.1
+      - 7.2
     * - OSIA Release Date
       - dec-2022
       - dec-2025
       - jan-2026
+      - mar-2026
     * - **Notification**
+      - 1.2.0
       - 1.2.0
       - 1.2.0
       - 1.2.0
@@ -119,7 +122,9 @@ under a new licence named the "OSIA License".
       - 1.2.0
       - 1.2.0
       - 1.2.0
+      - 1.2.0
     * - **Data Access**
+      - 1.3.0
       - 1.3.0
       - 1.3.0
       - 1.3.0
@@ -127,19 +132,24 @@ under a new licence named the "OSIA License".
       - 1.2.1
       - **1.3.0**
       - 1.3.0
+      - **1.3.1**
     * - **Population Registry Services**
       - 1.4.1
       - **1.5.0**
       - **1.5.1**
+      - **1.5.2**
     * - **Biometrics Services**
       - 1.5.1
       - **1.6.0**
       - 1.6.0
+      - **1.6.1**
     * - **Credential Services**
       - 1.2.1
       - **1.3.0**
       - 1.3.0
+      - **1.3.1**
     * - **Third Party Services**
       - 1.1.1
       - **1.2.0**
       - 1.2.0
+      - **1.2.1**
